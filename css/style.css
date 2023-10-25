@@ -621,21 +621,23 @@ a:hover::after {
   height: 200px;
   text-align: center;
   position: relative;
-  transition: all 0.4s ease-in-out;
+  /* transition: all 0.4s ease-in-out; */
   
   
 }
 
 .online-item-image img{
   width: 90px;
+  height: 70px;
   display: block;
+  margin-bottom: 25px;
 
 }
 
 .online-item-image{
    position: absolute;  
    width: 100px;
-   height: 70px;
+   height: 80px;
    /* border: 1px solid red; */
    margin: 0 auto;
    overflow: hidden;
@@ -646,9 +648,19 @@ a:hover::after {
    
 }
 
-.online-item-image:hover{
-  top: 0px;
 
+.online-icons{
+  width: 100px;
+  transition: all .4s ease-in-out;
+  display: block;
+
+}
+
+
+.online-icons:hover{
+  
+    transform:translateY(-100px)
+    
 }
 
 
