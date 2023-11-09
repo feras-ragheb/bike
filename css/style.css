@@ -268,8 +268,8 @@ a:hover::after {
 
 .bike-collections{
   width:100%;
-  height: 600px;
   margin: 20px 0px;
+  position: relative;
 }
 
 .bike-title-collections{
@@ -286,7 +286,6 @@ a:hover::after {
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
-  
 
 }
 
@@ -311,6 +310,7 @@ a:hover::after {
   overflow: auto !important;
   margin: 0 auto;
   width: 80%;
+  position: relative;
 }
 
 .bike-item-color ul{
@@ -605,6 +605,7 @@ a:hover::after {
   font-size: 0.9rem;
   margin-bottom: 90px;
   position: relative;
+
 }
 
 .online{
@@ -677,3 +678,134 @@ a:hover::after {
 
 
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  font-size: 1.5rem;
+}
+
+/* Close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.modal-product-image{
+  width: 140px;
+  height: 140px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  display: inline-block;
+  margin-right: 28px;
+
+}
+
+/* Color */
+
+.custom-radios div {
+  display: inline-block;
+}
+.custom-radios input[type="radio"] {
+  display: none;
+}
+.custom-radios input[type="radio"] + label {
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+.custom-radios input[type="radio"] + label span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 0px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  line-height: 44px;
+}
+/* .custom-radios input[type="radio"] + label span img {
+  opacity: 0;
+  transition: all 0.3s ease;
+} */
+.custom-radios input[type="radio"].greenInput + label span {
+  background-color: #2ecc71;
+}
+
+
+.custom-radios input[type="radio"].blueInput + label span {
+  background-color: #3498db;
+}
+
+
+.custom-radios input[type="radio"].yellowInput + label span {
+  background-color: #f1c40f;
+}
+
+
+
+.custom-radios input[type="radio"].redInput + label span {
+  background-color: #e74c3c;
+}
+
+.custom-radios input[type="radio"]:checked + label span img {
+  opacity: 1;
+}
+
+
+
+
+.custom-radios input:checked + label span {
+  border: 2px solid;
+}
+
+/* Customize the border color for each color option */
+.custom-radios input:checked.greenInput + label span {
+  border-color: green;
+}
+
+.custom-radios input:checked.blueInput + label span {
+  border-color: blue;
+}
+
+.custom-radios input:checked.yellowInput + label span {
+  border-color: yellow;
+}
+
+.custom-radios input:checked.redInput + label span {
+  border-color: red;
+}
+
+
+.cart-products{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 60px;
+  width: 100%;
+
+
+}
