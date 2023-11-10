@@ -512,7 +512,7 @@ a:hover::after {
 }
 
 .bike-info-image{
-  width: 65%;
+  width: 50%;
   margin: 0 auto;
   text-align: center;
   transition: 0.5s ease-out;
@@ -526,8 +526,8 @@ a:hover::after {
 
 .bike-info-image img{
 
-  width: 650px;
-  height: 450px;
+  width: 620px;
+  height: 400px;
 
 }
 
